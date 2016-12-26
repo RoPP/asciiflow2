@@ -1,0 +1,17 @@
+{
+  "name": "asciiflow2",
+  "version": "0.0.1",
+  "description": "make ascii graph",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:RoPP/asciiflow2.git",
+    "type": "git"
+  },
+  "author": "Rodolphe Pelloux-Prayer <rodolphe@damsy.net>",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "webpack": "2.2.0-rc.0",
+    "webpack-dev-server": "2.2.0-rc.0"
+  }
+}
