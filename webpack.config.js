@@ -1,6 +1,7 @@
 'use strict';
 
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: __dirname + "/src",
@@ -10,10 +11,9 @@ module.exports = {
   output: {
     path: __dirname + "/dist",
     filename: "[name].bundle.js",
-    publicPath: "assets",
   },
   devServer: {
-    contentBase: __dirname,
+    contentBase: __dirname + "/src/assets",
   },
   resolve: {
     extensions: ['.ts', '.js']
@@ -26,5 +26,8 @@ module.exports = {
         loader: 'awesome-typescript-loader'
       }
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin({
+    template: 'index.html'
+  })]
 };
