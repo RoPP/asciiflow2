@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   context: __dirname + "/src",
   entry: {
-    app: "./app/index.ts",
+    app: "./index.ts",
   },
   output: {
     path: __dirname + "/dist",
@@ -24,6 +24,10 @@ module.exports = {
       {
         test: /\.ts$/,
         loader: 'awesome-typescript-loader'
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },

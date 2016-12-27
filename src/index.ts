@@ -1,3 +1,5 @@
+import "./styles.scss";
+
 /**
  * Runs the application.
  */

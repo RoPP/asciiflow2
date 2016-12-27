@@ -11,7 +11,11 @@
   "license": "MIT",
   "devDependencies": {
     "awesome-typescript-loader": "^3.0.0-beta.17",
+    "css-loader": "^0.26.1",
     "html-webpack-plugin": "^2.24.1",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
     "typescript": "2.1"
   },
   "dependencies": {
