@@ -3,9 +3,9 @@
 const webpack = require("webpack");
 
 module.exports = {
-  context: __dirname + "/js-lib",
+  context: __dirname + "/src",
   entry: {
-    app: "./launch.js",
+    app: "./app/index.ts",
   },
   output: {
     path: __dirname + "/dist",
