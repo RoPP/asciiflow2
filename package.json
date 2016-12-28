@@ -19,6 +19,8 @@
     "typescript": "2.1"
   },
   "dependencies": {
+    "@types/jquery": "^2.0.34",
+    "jquery": "2",
     "webpack": "2.2.0-rc.0",
     "webpack-dev-server": "2.2.0-rc.0"
   }
