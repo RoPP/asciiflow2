@@ -28,6 +28,13 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.(png|gif|jpe?g|svg)$/i,
+        loader: 'url-loader',
+        query: {
+          limit: 10000,
+        }
       }
     ]
   },
