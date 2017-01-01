@@ -35,6 +35,10 @@ module.exports = {
         query: {
           limit: 10000,
         }
+      },
+      {
+        test: /\.html/,
+        loader: 'html-loader',
       }
     ]
   },
